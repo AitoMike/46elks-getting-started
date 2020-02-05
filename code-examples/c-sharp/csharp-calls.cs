@@ -26,7 +26,7 @@ public class ElkSendSMS
         Client.DefaultRequestHeaders.Authorization = header;
             
         var responseMessage =  Client.Post("https://api.46elks.com/a1/Calls", content);
-        var response = esponseMessage.Content.ReadAsString();
+        var response = responseMessage.Content.ReadAsString();
         Console.WriteLine (response);
     }
 }
